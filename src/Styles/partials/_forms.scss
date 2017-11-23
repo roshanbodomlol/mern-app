@@ -1,0 +1,33 @@
+@import './colors';
+
+#login-form, #register-form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form-inner {
+        margin-bottom: 270px;
+    }
+}
+
+form {
+    .form-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 300px;
+        margin-bottom: 6px;
+        padding: 6px 12px;
+        border: 1px solid $faintBlack;
+        background: #eee;
+        transition: all .2s ease;        
+        &:focus {
+            box-shadow: none !important;
+            outline: none;
+            border: 1px solid $primaryColor;
+            transition: all .2s ease;
+            float: left;
+        }
+    }
+}

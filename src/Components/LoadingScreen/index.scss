@@ -1,0 +1,17 @@
+@import '../../Styles/partials/colors';
+
+.loading-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primaryColor;
+  z-index: 999;
+  img {
+    max-width: 36px;
+  }
+}

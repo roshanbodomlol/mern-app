@@ -1,0 +1,97 @@
+.btn {
+  color: #fff;
+  background: #b82601;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all .2s ease;
+}
+
+.btn .disabled {
+  opacity: .75;
+  pointer-events: none;
+}
+
+.btn:hover {
+  background: rgba(184, 38, 1, 0.65);
+  transition: all .2s ease;
+}
+
+#login-form, #register-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form .form-inner, #register-form .form-inner {
+  margin-bottom: 270px;
+}
+
+form .form-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+  width: 300px;
+  margin-bottom: 6px;
+  padding: 6px 12px;
+  border: 1px solid rgba(29, 39, 49, 0.45);
+  background: #eee;
+  transition: all .2s ease;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus {
+  box-shadow: none !important;
+  outline: none;
+  border: 1px solid #062f4f;
+  transition: all .2s ease;
+  float: left;
+}
+
+body {
+  color: #000000;
+  font-size: 16px;
+  background: url("../Images/bg.png");
+  font-family: "Questrial", sans-serif;
+}
+
+a {
+  color: #b82601;
+}
+
+a:hover {
+  color: #b82601;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #813772;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.separator-list {
+  margin: 0;
+}
+
+.separator-list li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.separator-list li:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: #813772;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.separator-list li:last-child:after {
+  display: none;
+}
+ 
+
+ /*# sourceMappingURL= global.css.map */

@@ -1,0 +1,17 @@
+@import './colors';
+
+.btn {
+    color: #fff;
+    background: $colorBright;
+    cursor: pointer;
+    border-radius: 0;
+    transition: all .2s ease;
+    .disabled {
+        opacity: .75;
+        pointer-events: none;
+    }
+    &:hover {
+      background: rgba(184, 38, 1, 0.65);
+      transition: all .2s ease;
+    }
+}

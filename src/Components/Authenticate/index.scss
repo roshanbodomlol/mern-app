@@ -1,0 +1,11 @@
+.authenticate-form {
+    h1 {
+        align-self: flex-start;
+    }
+    .btn {
+        align-self: flex-end;
+        &:focus {
+
+        }
+    }
+}

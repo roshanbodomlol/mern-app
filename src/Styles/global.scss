@@ -1,0 +1,48 @@
+@import './partials/colors';
+@import './partials/buttons';
+@import './partials/forms';
+
+$mainFont: 'Questrial', sans-serif;
+$fontHeading: 'Fjalla One', sans-serif;
+
+body {
+    color: $colorDark;
+    font-size: 16px;
+    background: url('../Images/bg.png');
+    font-family: $mainFont;
+}
+
+a {
+    color: $colorBright;
+    &:hover {
+        color: $colorBright;
+        text-decoration: none;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $secondaryColor;
+    font-family: $fontHeading;
+}
+
+.separator-list {
+    margin: 0;
+    li {
+        margin: 0 15px;
+        position: relative;
+        &:after {
+            content: "";
+            height: 100%;
+            width: 1px;
+            background: #813772;
+            position: absolute;
+            top: 0;
+            right: -10px;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
